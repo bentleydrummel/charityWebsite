@@ -10,19 +10,47 @@
   </head>
   <body>
 
-<ul>
-  <li><a class="active" href="#home" onclick="navHome()">Home</a></li>
-  <li><a href="#gallery" onclick="navGallery()">Gallery</a></li>
+<nav  id="navbar">
+<ul class="nav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#gallery">Action Shots</a></li>
+  <li><a href="#video">Unseen Footage</a></li>
+  <li><a href="#music">Soundtrack</a></li>
 </ul>
-    <nav>
-       <img src="images/indielogo.png" class="logo">
-        <div class="wrapper">
+</nav>
+<div class="content" id="home">
 
-       </div>
-    </nav>
+       <img src="images/indielogo.png" class="logo">
+
+
     <h3>Indie is a 5 month old cockapoo puppy named after the archaeologist and explorer Indiana Jones (technically named after his dog who is also called Indiana). He enjoys eating socks, exploring and digging, but not for any crystal skulls or the ark of the covenant! He’s more likely to chase pebbles than run away from boulders and he’s too fussy to ever consider monkey brains however he’s still one of the best Indies out there.</h3>
-    <img>
+
+    <h2 id="gallery"> Indie In Action </h2>
+      <img src="images/Dog.png" alt="Indie as Indiana" style="width:10%">
+      <img src="images/indiefriend.jpg" alt="Indie and short round" style="width:10%">
+      <img src="images/indielog.jpg" alt="Indie on a treacherous bridge" style="width:10%">
+      <img src="images/indiepillow.jpg" alt="Indie hiding" style="width:18%">
+      <img src="images/indielie.jpg" alt="Indie when he sees snakes" style="width:10%">
+      <img src="images/indiecurl.jpg" alt="Indie getting well earned rest" style="width:15%">
+      <img src="images/indieprotect.jpg" alt="Indie protecting his artefacts/toys" style="width:15%">
+      <img src="images/indiegrass.jpg" alt="Indie on the lookout for treasure" style="width:10%">
+
+    <h2 id="video"> Unseen Indie Footage </h2>
+    <video width="640" controls class="video">
+      <source src="images/indiefight.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2 id="music">Indie's Soundtrack</h2>
     <iframe src="https://open.spotify.com/embed/playlist/7fr3t0h9DmMSUUe6LrYigG" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-  	<script src="scripts/app.js"></script>
+  </div>
+  <footer>
+    <div class="footer">
+      <span class="left">Author: Izzy Ferrandez</span>
+      <span class="right">Made for: Indie Ferrandez</span>
+    </div>
+  </footer>
+    <script src="scripts/app.js"></script>
+
   </body>
 </html>

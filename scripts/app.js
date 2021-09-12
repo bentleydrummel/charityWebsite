@@ -1,7 +1,17 @@
-function navHome() {
-  window.location.href = "file:///C:/Users/isabe/OneDrive/COLLEGE%20PREP/Computer%20science/charityWebsite/index.html#home";
-}
+// When the user scrolls the page, execute stickyHeader
+window.onscroll = function() {stickyHeader()};
 
-function navGallery() {
-  window.location.href = "file:///C:/Users/isabe/OneDrive/COLLEGE%20PREP/Computer%20science/charityWebsite/index.html#gallery";
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyHeader() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
